@@ -12,8 +12,8 @@
     "services:down": "docker compose -f infra/compose.yaml down",
     "services:stop": "docker compose -f infra/compose.yaml stop",
     "services:up": "docker compose -f infra/compose.yaml up -d",
-    "test": "jest",
-    "test:watch": "jest --watchAll"
+    "test": "jest --runInBand",
+    "test:watch": "jest --runInBand --watchAll"
   },
   "author": "EricDosReis",
   "license": "MIT",
