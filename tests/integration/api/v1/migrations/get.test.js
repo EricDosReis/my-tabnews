@@ -2,7 +2,7 @@ import orchestrator from 'tests/orchestrator';
 
 beforeAll(async () => {
   await orchestrator.waitForAllServices();
-  await orchestrator.clearDatabase()
+  await orchestrator.clearDatabase();
 });
 
 describe('GET /api/v1/migrations', () => {
@@ -19,4 +19,3 @@ describe('GET /api/v1/migrations', () => {
     });
   });
 });
-
